@@ -2,9 +2,10 @@ name: Pystest and flake8 test
 
 on:
   push:
-    branches: [ main  ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
